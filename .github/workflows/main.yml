@@ -15,4 +15,4 @@ job:
       - name: Run a multi-line script
         run: |
           echo ajouter une autre action a la section build
-          echo tester deployer le projet
+          echo tester et deployer le projet
