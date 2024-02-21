@@ -14,5 +14,5 @@ job:
         run:  echo hello, world
       - name: Run a multi-line script
         run: |
-          echo ajouter une autre action a la section build
-          echo tester et deployer le projet
+              echo ajouter une autre action a la section build
+              echo tester et deployer le projet
