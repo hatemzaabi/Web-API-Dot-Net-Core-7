@@ -1,1 +1,18 @@
-
+Name: CI
+on: 
+  Push:
+    branches: [ main ]
+  pull_request:
+    branches:[ main ]
+  workflow_dispatch:
+job:
+  build:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Run a one-line script
+        run:  echo hello, world
+      - name: Run a multi-line script
+        run: |
+          echo ajouter une autre action a la section build
+          echo tester deployer le projet
